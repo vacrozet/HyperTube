@@ -109,7 +109,9 @@ module.exports = (req, res) => {
                 addSub(sub, cb)
               }
             }).catch(err => {
-              console.log(err)
+              if (err.message !== 'Request failed with status code 404') {
+                console.log(err)
+              }
               cb(null)
             })
           }, err => {
