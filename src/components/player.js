@@ -16,8 +16,8 @@ class Player extends Component {
     let self = this
     this._isMounted = false
     setTimeout(() => {
-      let playPromise = self.video.play();
       if (self.video && self.video.paused) {
+        let playPromise = self.video.play();
         if (playPromise !== undefined) {
           playPromise.then(_ => {
             self.video.play()
