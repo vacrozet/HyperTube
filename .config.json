@@ -1,6 +1,6 @@
 {
   "port": 3005,
-  "pathStorage": "/Users/vacrozet/goinfre/",
+  "pathStorage": "/Users/malexand/goinfre/",
   "db": {
     "host": "sql.itsalex.fr",
     "database": "hypertube",
