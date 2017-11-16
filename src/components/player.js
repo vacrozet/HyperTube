@@ -16,7 +16,15 @@ class Player extends Component {
     let self = this
     this._isMounted = false
     setTimeout(() => {
-      if (self.video && self.video.paused) self.video.play()
+      let playPromise = self.video.play();
+      if (self.video && self.video.paused) {
+        if (playPromise !== undefined) {
+          playPromise.then(_ => {
+            self.video.play()
+          })
+          .catch(() => {})
+        }
+      }
     }, 3000)
   }
 
@@ -67,7 +75,9 @@ class Player extends Component {
         this.video.addEventListener('pause', (e) => {
           e.preventDefault()
           if (self.video && self.video.currentTime > 0 && self.video.paused && !self.video.ended
-            && self.video.readyState > 2) self.video.play()
+            && self.video.readyState > 2) {
+              self.video.play()
+            }
         })
       }
       this.video.addEventListener('error', (err) => {
