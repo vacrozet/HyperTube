@@ -1,0 +1,59 @@
+.commentBlock {
+}
+
+.content {
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.commentCom {
+    border: 5px solid var(--color1);
+    width: 50%;
+    background-color: var(--color1);
+    height: auto;
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+    word-break: break-all;
+    padding: 2px;
+    line-height: 1;
+}
+
+.ui.comments.contentGroup {
+    -webkit-flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 100px;
+    width: 100%;
+    max-width: 100%;
+}
+
+div.contentDiv.content {
+    border-left: 4px solid white;
+    margin: 15px 13px;
+    padding: 10px;
+}
+
+div.contentDiv.content:hover {
+    border-left: 4px solid var(--color3);
+}
+
+time {
+    color: white;
+}
+
+.commentUser {
+    color: white;
+    width: max-content;
+}
+
+.commentUser:hover {
+    color: var(--color1);
+    cursor:pointer;
+}
+
+.ui.button {
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,105 @@
+.item-container {
+    border: 2px solid var(--color3);
+    border-radius: 2%;
+    width: 312px;
+    min-width: 312px;
+    height: 450px;
+    margin-top: 15px;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-size: cover;
+    background-image: url('https://react.semantic-ui.com/assets/images/wireframe/image.png');
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.item-container > .opac {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    width: 100%;
+    -webkit-transition: opacity .35s ease-in-out;
+    -moz-transition: opacity .35s ease-in-out;
+    -ms-transition: opacity .35s ease-in-out;
+    -o-transition: opacity .35s ease-in-out;
+    transition: opacity .35s ease-in-out;
+}
+
+.item-container > .opac > .item-info {
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.item-container > .opac > .item-info > .title {
+    font-size: 1.8rem;
+    font-family: unset;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.item-container > .opac > .item-info > .title > .date {
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
+    color: white;
+}
+
+.item-container > .opac > .item-info > .grade {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.item-container:hover {
+    border: 2px solid var(--color1);
+}
+
+.item-container:hover > .item-info {
+    opacity: 1;
+}
+
+.item-container:hover > .opac {
+    opacity: 1;
+    -webkit-transition: opacity .35s ease-in-out;
+    -moz-transition: opacity .35s ease-in-out;
+    -ms-transition: opacity .35s ease-in-out;
+    -o-transition: opacity .35s ease-in-out;
+    transition: opacity .35s ease-in-out;
+}
+
+.ui.statistic > .value.statValue {
+    font-size: 2rem!important;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.ui.inverted.segment {
+    background: none;
+    text-align: center;
+}
+
+.ui.green.inverted.button {
+    color: var(--color3);
+    box-shadow: 0 0 0 2px var(--color3) inset!important;
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
+}
+
+.ui.green.inverted.button:hover {
+    background-color: var(--color3);
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+.ui.green.inverted.button:focus {
+    background-color: var(--color3)
+}

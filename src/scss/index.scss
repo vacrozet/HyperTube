@@ -1,0 +1,60 @@
+$bg-color: #35404f;
+$color1: #4aaaa4;
+$color2: #7accc7;
+$color3: #e45f57;
+$font: 'Rubik', sans-serif;
+
+:root {
+    --bg-color: $bg-color;
+    --color1: $color1;
+    --color2: $color2;
+    --color3: $color3;
+}
+
+* {
+    outline: none;
+}
+  
+html, body, #root, #container-root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    font-family: $font;
+    font-size: 1rem;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: var(--color3);
+}
+
+video::cue {
+    background: none;
+}
+
+@import 'register.scss';
+@import 'login.scss';
+@import 'movie.scss';
+@import 'profile.scss';
+@import 'forget.scss';
+@import 'reset.scss';
+@import 'components/frontBarre.scss';
+@import 'components/grid.scss';
+@import 'components/item.scss';
+@import 'components/notification.scss';
+@import 'components/player.scss';
+@import 'components/comment.scss';
