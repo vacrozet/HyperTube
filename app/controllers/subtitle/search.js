@@ -7,7 +7,9 @@ const srt2vtt = require('srt2vtt')
 const genUuid = require('uuid')
 
 const OS = require('opensubtitles-api')
-const OpenSubtitles = new OS({ useragent: 'iziplay' })
+const OpenSubtitles = new OS({
+  useragent: 'iziplay'
+})
 
 const modelDownload = require('../../models/download.js')
 const model = require('../../models/subtitle.js')
