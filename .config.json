@@ -1,0 +1,39 @@
+{
+  "port": 3005,
+  "pathStorage": "/Users/malexand/goinfre/",
+  "db": {
+    "host": "sql.itsalex.fr",
+    "database": "hypertube",
+    "user": "hypertube",
+    "password": "XALiHkakizyRPcZz"
+  },
+  "passport": {
+    "fortyTwo": {
+      "id": "26b47c8ee021afac178539578c7e0a8a69938c24678e13cf87dde7f1e71417d7",
+      "secret": "956bab412523ce711826e6783755dd1c49345dccd600ac5dad291ce5ca45fa8b"
+    },
+    "github": {
+      "id": "8d194b05381bb6c48f37",
+      "secret": "8f948ff0bda9118208bbedf914656a908dbe0591"
+    },
+    "facebook": {
+      "id": "967423820062660",
+      "secret": "fe477d70bbc1469725dcde315498fcc5"
+    }
+  },
+  "api": {
+    "trakt": {
+      "id": "5ef30bc4801341008ee16c3020b27d8aefa195be3794abf3109775d835e3a438",
+      "secret": "04a7acf0625da38b65c06877bd6b91b23b32c5f7bf664dcaa2ed0162dd9a0820"
+    },
+    "tmdb": {
+      "key": "4add767f00472cadffc84346bd8572e6"
+    },
+    "tvdb": {
+      "apiKey": "08B698E8D32C8C9F",
+      "userKey": "3DA9AE46484649C9",
+      "username": "ItsAlex",
+      "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDcyMTEwMDAsImlkIjoiSHlwZXJ0dWJlIiwib3JpZ19pYXQiOjE1MDcxMjQ2MDAsInVzZXJpZCI6NDg5MTQ4LCJ1c2VybmFtZSI6Ikl0c0FsZXgifQ.ePS6pCiUwUdVOSQ2IZuEPCJ7IJNwlEdyTkzqHORPzbc_BPi09AjlW--M-Z8q12czlafgG-s9dP-116peaWIBcwgzPjb2SgLq0Ja14btlAYz8nFAxMHylwGA19A-ZVhzsy75Nc-B-QNmHShDLi2kMqHhU_omRZO_kQrcmAyHEdohaXV1lN4A6Lc3EA2o2wnyBtYtutRZBK2j3_2XEBMtxwKVx46EZZ0McAUA4elKf1yIOA0Hc-XjC3TytHN10Kf5ml1OHusW8dq0PgLZM2A6-aKofIvIbbGjiX2jUGQjxztg43APaU68rbj67fR6XKNNW6uDdvQztEx1mUP6ODdXhkg"
+    }
+  }
+}
